@@ -1,0 +1,457 @@
+{
+  "status": "success",
+  "data": {
+    "tracks": [
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1BxfuPKGuaTgP7aM0Bbdwr",
+        "name": "Cruel Summer",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647",
+        "spotifyId": "1BxfuPKGuaTgP7aM0Bbdwr",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG11901472",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1D4PL9B8gOg78jiHg3FvBb",
+        "name": "Love Story",
+        "image": "https://i.scdn.co/image/ab67616d0000b27360cb9332e8c8c7d8e50854b3",
+        "spotifyId": "1D4PL9B8gOg78jiHg3FvBb",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY0803275",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/20TtQ216je8xenAxttiqmd",
+        "name": "Holanda",
+        "image": "https://i.scdn.co/image/ab67616d0000b2737711703738d4b1fdd03d794a",
+        "spotifyId": "20TtQ216je8xenAxttiqmd",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAW2382208",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/0ug5NqcwcFR2xrfTkc7k8e",
+        "name": "Style",
+        "image": "https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a",
+        "spotifyId": "0ug5NqcwcFR2xrfTkc7k8e",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY1431319",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1SSj8VnmFs7jDDGUddEOoY",
+        "name": "Taylor Swift Mash-Up",
+        "image": "https://i.scdn.co/image/ab67616d0000b2735d73bf56517178a3d1bbf4b8",
+        "spotifyId": "1SSj8VnmFs7jDDGUddEOoY",
+        "artists": [
+          {
+            "name": "Anthem Lights",
+            "sourceUrl": "https://open.spotify.com/artist/7kwEvDE8e7EBGKh5bLczqQ"
+          }
+        ],
+        "isrc": "TCABR1323521",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/5THKcIghVnEXVXdIop7IM6",
+        "name": "Blank Space - Instrumental",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d52348e996aaa13db7deacab",
+        "spotifyId": "5THKcIghVnEXVXdIop7IM6",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAW2332621",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1u8c2t2Cy7UBoG4ArRcF5g",
+        "name": "Blank Space",
+        "image": "https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a",
+        "spotifyId": "1u8c2t2Cy7UBoG4ArRcF5g",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY1431309",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/04S1pkp1VaIqjg8zZqknR5",
+        "name": "Enchanted",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d0eae3c1661a96570f0ca7bd",
+        "spotifyId": "04S1pkp1VaIqjg8zZqknR5",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY1003663",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3yFa9nw7HbZGCQ5D7iAXba",
+        "name": "Fukumean",
+        "image": "https://i.scdn.co/image/ab67616d0000b27345abef3005bfe09a6ae8170e",
+        "spotifyId": "3yFa9nw7HbZGCQ5D7iAXba",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAU2386841",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/0V3wPSX9ygBnCm8psDIegu",
+        "name": "Anti-Hero",
+        "image": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5",
+        "spotifyId": "0V3wPSX9ygBnCm8psDIegu",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG12205736",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1GEBsLDvJGw7kviySRI6GX",
+        "name": "You Belong With Me",
+        "image": "https://i.scdn.co/image/ab67616d0000b27360cb9332e8c8c7d8e50854b3",
+        "spotifyId": "1GEBsLDvJGw7kviySRI6GX",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY0803328",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/6c4pIPpplYX08TCGFSRk9f",
+        "name": "Paint The Town Red",
+        "image": "https://i.scdn.co/image/ab67616d0000b2738468586365fcd5cfd3eb4de4",
+        "spotifyId": "6c4pIPpplYX08TCGFSRk9f",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAU2385320",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1ZHXBrUCTPEklXQe1LCBzK",
+        "name": "Our Song",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d86bcd53a9625002d9138443",
+        "spotifyId": "1ZHXBrUCTPEklXQe1LCBzK",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY0703142",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/32fsPVylxPwPXBAMZZkexW",
+        "name": "Sprinter",
+        "image": "https://i.scdn.co/image/ab67616d0000b2732a4b354ee649471a4224d747",
+        "spotifyId": "32fsPVylxPwPXBAMZZkexW",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAW2332654",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3N4jDy6l8jO2rNjjXkgg6d",
+        "name": "Tim McGraw",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d86bcd53a9625002d9138443",
+        "spotifyId": "3N4jDy6l8jO2rNjjXkgg6d",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY0603008",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/6lCgGQa3kmD5nC2AljLgH7",
+        "name": "Lala",
+        "image": "https://i.scdn.co/image/ab67616d0000b273eb824be28efa4f67581589a7",
+        "spotifyId": "6lCgGQa3kmD5nC2AljLgH7",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAU2386840",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3hUxzQpSfdDqwM3ZTFQY0K",
+        "name": "august",
+        "image": "https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc",
+        "spotifyId": "3hUxzQpSfdDqwM3ZTFQY0K",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG12002842",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/0cqRj7pUJDkTCEsJkx8snD",
+        "name": "Shake It Off",
+        "image": "https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a",
+        "spotifyId": "0cqRj7pUJDkTCEsJkx8snD",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY1431349",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1fDYDPa2jeEh47o3YSMmRu",
+        "name": "Style",
+        "image": "https://i.scdn.co/image/ab67616d0000b273ae0f756f58ccd1bf30e15109",
+        "spotifyId": "1fDYDPa2jeEh47o3YSMmRu",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAW2374729",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/5kHMfzgLZP95O9NBy0ku4v",
+        "name": "I Can See You (Taylor’s Version) (From The Vault)",
+        "image": "https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481",
+        "spotifyId": "5kHMfzgLZP95O9NBy0ku4v",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG12302091",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3a1d0jFI9ljLFwZr5S6zno",
+        "name": "Starboy",
+        "image": "https://i.scdn.co/image/ab67616d0000b2737c550b46cd93014ebaf469df",
+        "spotifyId": "3a1d0jFI9ljLFwZr5S6zno",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAW2385153",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/1dGr1c8CrMLDpV6mPbImSI",
+        "name": "Lover",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647",
+        "spotifyId": "1dGr1c8CrMLDpV6mPbImSI",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG11901473",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3fVnlF4pGqWI9flVENcT28",
+        "name": "Wildest Dreams",
+        "image": "https://i.scdn.co/image/ab67616d0000b273b7e976d2b35c767f9012cb72",
+        "spotifyId": "3fVnlF4pGqWI9flVENcT28",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USCJY1431379",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/34JhPvAKplYZPw4PLStI9z",
+        "name": "Muted",
+        "image": "https://i.scdn.co/image/ab67616d0000b27331914a7f6869b9e5fcf5a760",
+        "spotifyId": "34JhPvAKplYZPw4PLStI9z",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAX2322855",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/4R2kfaDFhslZEMJqAFNpdd",
+        "name": "cardigan",
+        "image": "https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc",
+        "spotifyId": "4R2kfaDFhslZEMJqAFNpdd",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG12002836",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/5l6GqSxplqnZbLg0LTPQeG",
+        "name": "Back To December",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d0eae3c1661a96570f0ca7bd",
+        "spotifyId": "5l6GqSxplqnZbLg0LTPQeG",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "GBUM71027838",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/2gUAWbwRLyE1Fzz4n5ti4G",
+        "name": "See You Again",
+        "image": "https://i.scdn.co/image/ab67616d0000b2738bfcd9fd3a03f258e3152097",
+        "spotifyId": "2gUAWbwRLyE1Fzz4n5ti4G",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAX2322853",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3sW3oSbzsfecv9XoUdGs7h",
+        "name": "Enchanted (Taylor's Version)",
+        "image": "https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481",
+        "spotifyId": "3sW3oSbzsfecv9XoUdGs7h",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG12302081",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/3MeK7CIoHEmAOCk35DhY1J",
+        "name": "Primera Cita",
+        "image": "https://i.scdn.co/image/ab67616d0000b273ba7de74c230a43946ae147fc",
+        "spotifyId": "3MeK7CIoHEmAOCk35DhY1J",
+        "artists": [
+          {
+            "name": "Taylor Swipe",
+            "sourceUrl": "https://open.spotify.com/artist/3105UcWyM9V6zuaoRSLEjY"
+          }
+        ],
+        "isrc": "QZTAW2381633",
+        "isExplicit": false
+      },
+      {
+        "type": "track",
+        "sourceUrl": "https://open.spotify.com/track/4P9Q0GojKVXpRTJCaL3kyy",
+        "name": "All Of The Girls You Loved Before",
+        "image": "https://i.scdn.co/image/ab67616d0000b2738481d8f15859aa5bae75ee17",
+        "spotifyId": "4P9Q0GojKVXpRTJCaL3kyy",
+        "artists": [
+          {
+            "name": "Taylor Swift",
+            "sourceUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+          }
+        ],
+        "isrc": "USUG12301406",
+        "isExplicit": false
+      }
+    ]
+  }
+}
