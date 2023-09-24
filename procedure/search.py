@@ -1,16 +1,15 @@
 import requests
 from tabulate import tabulate
+from wcwidth import wcswidth
 
 from const.basic import *
 from procedure.multi import collect_info_main
 
-mod = 0
 
-
-def check_connection() -> bool:
-    global mod
+def check_connection():
     url = search_page
     s = requests.session()
+    mod = 0
 
     try:
         resp = s.get(url)
@@ -41,7 +40,7 @@ def check_connection() -> bool:
     except requests.ConnectionError:
         mod += 4
     if mod < 6:
-        return True
+        return mod
 
 
 def search_song(query: str):
@@ -63,25 +62,21 @@ def search_song(query: str):
     return collect_info_main(query_list)
 
 
-if __name__ == '__main__':
-    if check_connection():
-        print(f'Connect to domains successfully')
-    else:
-        raise ConnectionError('Please check your connection or try this app after a while')
+def check_procedure(input_str: str):
+    query_final = search_song(input_str)
 
-    if mod == 1:
-        print('Enable Main Mode')
-    elif mod == 2:
-        print('Enable Backup Mode 1')
-    elif mod == 5:
-        print('Enable no Hi-Res Mode 2')
-
-    user_input = '青花瓷'  # input('Please input search words: ')
-    query_final = search_song(user_input)
-
-    # 打印表格
     if len(query_final):
-        heads = ['Track Name', 'Artist(s)', 'Release Data', 'Release Type']
-        print(tabulate(query_final, heads, tablefmt='psql', colalign=("center", "center", "center", "center")))
+        selected_column = [row[:-1] for row in query_final]
+        heads = ['', 'Track Name', 'Artist(s)', 'Release Data', 'Download Type']
+        column_widths = [wcswidth(str(header)) for header in heads]
+        for row in selected_column:
+            for i, value in enumerate(row):
+                if i > 4: continue
+                column_widths[i] = max(column_widths[i], wcswidth(str(value)))
 
-    print(mod)
+        alignments = ["center" for _ in heads]
+        print(tabulate(selected_column, heads, colalign=alignments, tablefmt='fancy_grid',
+                       maxcolwidths=column_widths))
+        return query_final
+    else:
+        return None

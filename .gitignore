@@ -1,6 +1,7 @@
 *idea/
 **/__pycache__
 .cache/*
+
 *.js
 *.txt
 *.mp3

@@ -6,8 +6,7 @@ import requests
 from const.basic import *
 
 
-def dw_from_origin(origin_url: str):
-    global resp
+def dw_from_main(name, artist, origin_url: str):
     origin_trans_url = ripper_page + 'dl?url=' + quote(origin_url) + '&format=mp3&donotshare=true'
     s = requests.session()
 
@@ -32,11 +31,12 @@ def dw_from_origin(origin_url: str):
         try:
             resp = s.get(url=origin_redirect)
             if resp.status_code == 200:
-                origin_status = resp.json()['status']
+                content = resp.json()
+                origin_status = content['status']
                 dw_status = (origin_status == 'done')
-                if 'percent' not in resp.json():
+                if 'percent' not in content:
                     continue
-                origin_percent = resp.json()['percent']
+                origin_percent = content['percent']
                 if origin_status != 'done':
                     process = "\r[%3s%%]: |%-50s|\033[K" % (int(origin_percent), '|' * int(origin_percent / 2))
                     time.sleep(3)
@@ -49,6 +49,25 @@ def dw_from_origin(origin_url: str):
                 break
         except requests.ConnectionError:
             raise ConnectionError('Please check your connection or try this app after a while')
+
+    print()
+    times = -1
+    while times < 8:
+        times += 1
+        time.sleep(1)
+        try:
+            resp = s.get(url=ripper_page + content['url'][2:])
+            if resp.status_code == 200:
+                filename = os.path.basename(
+                    name + ' - ' + artist + content['url'][content['url'].rfind('.'):]
+                )
+                file_path = os.path.join(save_dir, filename)
+                with open(file_path, 'wb') as mp3_file:
+                    mp3_file.write(resp.content)
+                print(f"\nThe download is completed and saved in {file_path}")
+                break
+        except requests.ConnectionError:
+            continue
 
 
 def dw_from_qobuz(qobuz_url: str):
@@ -97,4 +116,4 @@ def dw_from_qobuz(qobuz_url: str):
 
 
 if __name__ == '__main__':
-    dw_from_origin('https://listen.tidal.com/track/96970498')
+    dw_from_main('https://listen.tidal.com/track/96970498')
