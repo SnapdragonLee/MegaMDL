@@ -6,7 +6,7 @@ import requests
 from const.basic import *
 
 
-def dw_from_main(name, artist, origin_url: str):
+def dw_from_main(name, artist, origin_url: str) -> bool:
     origin_trans_url = ripper_page + 'dl?url=' + quote(origin_url) + '&format=mp3&donotshare=true'
     s = requests.session()
 
@@ -21,7 +21,8 @@ def dw_from_main(name, artist, origin_url: str):
             time.sleep(0.5)
             continue
     if not flag_origin:
-        raise ConnectionError('Please check your connection or try this app after a while')
+        print('Please check your connection or try this app after a while')
+        return False
 
     origin_redirect = ripper_page + 'dl/' + resp.json()['id']
 
@@ -46,9 +47,10 @@ def dw_from_main(name, artist, origin_url: str):
 
             else:
                 print('Server is down, Please try again or wait a little while')
-                break
+                return False
         except requests.ConnectionError:
-            raise ConnectionError('Please check your connection or try this app after a while')
+            print('Please check your connection or try this app after a while')
+            return False
 
     print()
     times = -1
@@ -68,51 +70,32 @@ def dw_from_main(name, artist, origin_url: str):
                 break
         except requests.ConnectionError:
             continue
+    return True
 
 
-def dw_from_qobuz(qobuz_url: str):
-    global resp
-    origin_trans_url = ripper_page + 'dl?url=' + quote(qobuz_url) + '&format=mp3&donotshare=true'
+def dw_from_qobuz(name, artist, qobuz_url: str):
     s = requests.session()
 
-    flag_origin = False
-    for attempt in range(5):
+    flag_qobuz = False
+    for attempt in range(3):
         try:
-            resp = s.get(url=origin_trans_url)
+            resp = s.get(url=qobuz_url)
             if resp.status_code == 200:
-                flag_origin = True
+                flag_qobuz = True
                 break
         except requests.ConnectionError:
             time.sleep(0.5)
             continue
-    if not flag_origin:
-        raise ConnectionError('Please check your connection or try this app after a while')
 
-    origin_redirect = ripper_page + 'dl/' + resp.json()['id']
-
-    dw_status = False
-
-    while not dw_status:
-        try:
-            resp = s.get(url=origin_redirect)
-            if resp.status_code == 200:
-                origin_status = resp.json()['status']
-                dw_status = (origin_status == 'done')
-                if 'percent' not in resp.json():
-                    continue
-                origin_percent = resp.json()['percent']
-                if origin_status != 'done':
-                    process = "\r[%3s%%]: |%-50s|\033[K" % (int(origin_percent), '|' * int(origin_percent / 2))
-                    time.sleep(3)
-                else:
-                    process = "\r[%3s%%]: |%-50s|" % (100, '|' * 50)
-                print(process, end='', flush=True)
-
-            else:
-                print('Server is down, Please try again or wait a little while')
-                break
-        except requests.ConnectionError:
-            raise ConnectionError('Please check your connection or try this app after a while')
+    if not flag_qobuz:
+        print('Please check your connection or try this app after a while')
+        return False
+    filename = os.path.basename(name + ' - ' + artist + '.flac')
+    file_path = os.path.join(save_dir, filename)
+    with open(file_path, 'wb') as hires_file:
+        hires_file.write(resp.content)
+    print(f"\nThe download is completed and saved in {file_path}")
+    return True
 
 
 if __name__ == '__main__':

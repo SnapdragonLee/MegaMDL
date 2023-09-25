@@ -22,17 +22,17 @@ def check_connection():
     flag_ripper = False
     for attempt in range(5):
         try:
-            resp = s.get(url)
+            resp = s.get(url, timeout=2)
             if resp.status_code == 200:
                 flag_ripper = True
                 mod += 1
                 break
-        except requests.ConnectionError:
+        except Exception:
             continue
     if not flag_ripper:
         mod += 2
 
-    url = qobuz_page
+    url = q_page
     try:
         resp = s.get(url)
         if resp.status_code != 200:

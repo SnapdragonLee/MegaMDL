@@ -19,11 +19,13 @@ if __name__ == '__main__':
     if query_list is None:
         print('Please try it again or change searching keyword')  # todo: Need to modify the structure of control flow
 
-    select_input = int(input('Please select a song:'))
+    select_input = int(input('Please select a song: '))
     song_select = query_list[select_input - 1]
 
     quality_input = int(input('Please select the quality: '))
     if quality_input == 4:
-        rtn = dw_from_qobuz(song_select[5][3])
+        rtn = dw_from_qobuz(song_select[1], song_select[2], song_select[5][3])
+    elif quality_input == 3 and song_select[5][quality_input - 1] is None:
+        rtn = dw_from_qobuz(song_select[1], song_select[2], song_select[5][4])
     else:
         rtn = dw_from_main(song_select[1], song_select[2], song_select[5][quality_input - 1])
