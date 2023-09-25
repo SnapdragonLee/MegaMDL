@@ -40,6 +40,30 @@
 
 
 
+## Usage
+
+1. Install all dependencies from `requirements.txt` using pip:
+
+   ```bash
+   pip install ./requirements.txt
+   ```
+
+2. Start it with python 3.6 or above:
+
+   ```bash
+   python ./main.py
+   ```
+
+> ###### *Due to server issues and judge incorrect, you may stuck at some time. Be free to wait a while or `Ctrl+C` to break the program and try it again!
+
+
+
 ## License
 
 Apache 2.0
+
+
+
+## Chinese left
+
+这下终于摆脱QQ、网易音乐的各种版本解码问题了，闲暇的时间可以试试下一下歌曲，老便捷了。

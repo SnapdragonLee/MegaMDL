@@ -3,6 +3,5 @@
 .cache/*
 
 *.js
-*.txt
 *.mp3
 *.flac
