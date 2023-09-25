@@ -29,3 +29,5 @@ if __name__ == '__main__':
         rtn = dw_from_qobuz(song_select[1], song_select[2], song_select[5][4])
     else:
         rtn = dw_from_main(song_select[1], song_select[2], song_select[5][quality_input - 1])
+
+    print('DEBUG is not finished')  # todo: should I make it public?
