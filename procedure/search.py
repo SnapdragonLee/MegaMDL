@@ -20,9 +20,9 @@ def check_connection():
 
     url = ripper_page
     flag_ripper = False
-    for attempt in range(5):
+    for attempt in range(3):
         try:
-            resp = s.get(url, timeout=2)
+            resp = s.get(url, timeout=3)
             if resp.status_code == 200:
                 flag_ripper = True
                 mod += 1
@@ -34,18 +34,18 @@ def check_connection():
 
     url = q_page
     try:
-        resp = s.get(url)
+        resp = s.get(url, timeout=1)
         if resp.status_code != 200:
             mod += 4
-    except requests.ConnectionError:
+    except Exception:
         mod += 4
     if mod < 6:
         return mod
 
 
-def search_song(query: str):
+def search_song(query: str, mod: int):
     # Build the API request URL
-    search_url = search_page + f'api/songwhip/search?q={query}&country=US&limit=6'
+    search_url = search_page + f'api/songwhip/search?q={query}&country=US&limit=8'
     session = requests.session()
 
     try:
@@ -59,19 +59,19 @@ def search_song(query: str):
         return f'An exception occurred: {e}'
 
     query_list = dat['data']['tracks']
-    return collect_info_main(query_list)
+    return collect_info_main(query_list, mod)
 
 
-def check_procedure(input_str: str):
-    query_final = search_song(input_str)
+def check_procedure(input_str: str, mod: int):
+    query_final = search_song(input_str, mod)
 
     if len(query_final):
-        selected_column = [row[:-1] for row in query_final]
-        heads = ['', 'Track Name', 'Artist(s)', 'Release Data', 'Download Type']
+        selected_column = [row[:-2] for row in query_final]
+        heads = ['', 'Track Name', 'Artist(s)', 'Release Data', 'Selectable Downloads']
         column_widths = [wcswidth(str(header)) for header in heads]
         for row in selected_column:
             for i, value in enumerate(row):
-                if i > 4: continue
+                if i > 4: break
                 column_widths[i] = max(column_widths[i], wcswidth(str(value)))
 
         alignments = ["center" for _ in heads]

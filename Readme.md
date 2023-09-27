@@ -24,9 +24,11 @@
 
 - [x] Metadata included
 
-- [ ] Metadata fix with info from other sources
+- [x] Exception judgement precisely
 
-- [ ] Exception judgement precisely
+- [x] Server-closed detection
+
+- [ ] Metadata fix with info from other sources
 
 - [ ] Add support for other audio origin services
 
@@ -53,6 +55,22 @@
    ```bash
    python ./main.py
    ```
+
+3. Server detection first, there would be 3 modes: `Main`，`Backup`,  `Slow Hi-Res Download` .
+
+4. Search songs by typing words:
+
+   ![image-20230928062441630](Readme.assets/image-20230928062441630.png)
+
+5. Type the option number and select download type which you prefer:
+
+   ![image-20230928062811036](Readme.assets/image-20230928062811036.png)
+
+   *Please wait until the procedure finished. If your network traffic is slow and choose `SQ` or `Hi-res` option, **this may take a few minutes to work out.**
+
+6. Now enjoy your onw music with fully metadata loaded:
+
+   ![image-20230928063422795](Readme.assets/image-20230928063422795.png)
 
 > ###### *Due to server issues and judge incorrect, you may stuck at some time. Be free to wait a while or `Ctrl+C` to break the program and try it again!
 

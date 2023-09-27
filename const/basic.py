@@ -7,6 +7,12 @@ str3 = '者隁鯙矎艥翧獬访襲阄밃腢铖䁨紅兲餈砒瑚郔稹'
 str4 = '鄓봏舳䶠蕦礇莃鳌ꨏ砧藒罟諵鑺鼄眍瑭䷒艣䛵醈霋렀猨鋣獝苐'
 str5 = '鄓봏舳䶠癩賳蹶贎븁筞䳥腪ៀ'
 
+COLORS = ["\033[1m\033[38;5;246m",  # Grey
+          "\033[1m\033[38;5;46m",  # Green
+          "\033[1m\033[38;5;161m",  # Red
+          "\033[1m\033[38;5;220m",  # Yellow
+          "\033[0m", ]  # Reset
+
 with open('config/config.json', 'rb') as f:
     config = json.load(f)
 f.close()
@@ -15,7 +21,7 @@ save_dir = config.get('save_dir', '')
 
 if not os.path.isabs(save_dir):
     script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    save_dir = os.path.join(script_dir, save_dir)
+save_dir = os.path.join(script_dir, save_dir)
 
 os.makedirs(save_dir, exist_ok=True)
 
