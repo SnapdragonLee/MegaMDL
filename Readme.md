@@ -64,7 +64,7 @@
 
 5. Type the option number and select download type which you prefer:
 
-   ![image-20230928062811036](Readme.assets/image-20230928062811036.png)
+   ![1695854548410](Readme.assets/1695854548410.jpg)
 
    *Please wait until the procedure finished. If your network traffic is slow and choose `SQ` or `Hi-res` option, **this may take a few minutes to work out.**
 
