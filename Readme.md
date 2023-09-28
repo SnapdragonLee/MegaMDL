@@ -1,4 +1,6 @@
-# MegaMDL - Enjoy online music in console 
+# MegaMDL - Enjoy online music in console
+
+[![GitHub release](https://img.shields.io/github/v/release/SnapdragonLee/MegaMDL)](https://github.com/SnapdragonLee/MegaMDL/releases/latest) [![License](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](./LICENSE)
 
 [TOC]
 
