@@ -34,7 +34,7 @@ if __name__ == '__main__':
         print("Please select the download options listed, you are requesting Non-Existent resource")
         exit("Exiting")
     if quality_input == 4 or quality_input == 3:
-        if song_select[6][quality_input - 1][8:9] == 'sl':
+        if song_select[6][quality_input - 1][8:10] == 'sl':
             rtn = dw_from_qobuz(song_select[1], song_select[2], song_select[6][quality_input - 1])
         else:
             rtn = dw_from_main(song_select[1], song_select[2], song_select[6][quality_input - 1])
