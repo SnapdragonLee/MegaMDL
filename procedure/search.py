@@ -34,7 +34,7 @@ def check_connection():
 
     url = q_page
     try:
-        resp = s.get(url, timeout=1)
+        resp = s.get(url, timeout=3)
         if resp.status_code != 200:
             mod += 4
     except Exception:
