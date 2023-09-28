@@ -5,3 +5,4 @@
 *.js
 *.mp3
 *.flac
+config/*.json

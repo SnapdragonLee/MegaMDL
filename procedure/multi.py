@@ -34,14 +34,15 @@ def collect_info(data, entry, sequence, mod: int):
                     raise Exception(f'Request failed with status code: {response.status_code}. Server maybe closed.')
             except Exception as e:
                 raise Exception(f'Connection Error occurred, Please restart script!: {e}')
-            q_dat = resp.json()['tracks']['items'][0]
-            if int(temp_q[temp_q.rfind('/') + 1:]) == q_dat['id']:
-                if q_dat['hires']:
-                    hires_st = True
-                    q_link = q_dw + 'id=' + str(q_dat['id'])
-                else:
-                    sq_st = True
-                    sq_link = q_dw + 'id=' + str(q_dat['id'])
+            if resp.json()['tracks']['total'] != 0:
+                q_dat = resp.json()['tracks']['items'][0]
+                if int(temp_q[temp_q.rfind('/') + 1:]) == q_dat['id']:
+                    if q_dat['hires']:
+                        hires_st = True
+                        q_link = q_dw + 'id=' + str(q_dat['id'])
+                    else:
+                        sq_st = True
+                        sq_link = q_dw + 'id=' + str(q_dat['id'])
     if mod != 2:
         if 'tidal' in links:
             sq_st = True
