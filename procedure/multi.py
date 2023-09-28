@@ -12,7 +12,6 @@ def collect_info(data, entry, sequence, mod: int):
     hq_st = False
     sq_st = False
     hires_st = False
-    sq_ad = False
     type_list = []
     s = requests.session()
 
@@ -27,10 +26,7 @@ def collect_info(data, entry, sequence, mod: int):
     dat = response.json()
     links = dat['data']['item']['links']
     if 'qobuz' in links:
-        if mod == 5:
-            hires_st = True
-            q_link = links['qobuz'][0]['link']
-        else:
+        if mod != 5:
             try:
                 temp_q = links['qobuz'][0]['link']
                 resp = requests.get(q_page + 'q=' + temp_q[temp_q.rfind('/') + 1:])
@@ -44,8 +40,8 @@ def collect_info(data, entry, sequence, mod: int):
                     hires_st = True
                     q_link = q_dw + 'id=' + str(q_dat['id'])
                 else:
-                    sq_ad = True
-                    sq_ad_link = q_dw + 'id=' + str(q_dat['id'])
+                    sq_st = True
+                    sq_link = q_dw + 'id=' + str(q_dat['id'])
     if mod != 2:
         if 'tidal' in links:
             sq_st = True
@@ -53,6 +49,9 @@ def collect_info(data, entry, sequence, mod: int):
         elif 'deezer' in links:
             sq_st = True
             sq_link = links['deezer'][0]['link']
+        elif 'qobuz' in links:
+            sq_st = True
+            sq_link = links['qobuz'][0]['link']
         if 'spotify' in links:
             hq_st = True
     if 'soundcloud' in links:
@@ -74,8 +73,7 @@ def collect_info(data, entry, sequence, mod: int):
                 links['soundcloud'][0]['link'] if m128k_st else None,
                 links['spotify'][0]['link'] if hq_st else None,
                 sq_link if sq_st else None,
-                q_link if hires_st else None,
-                sq_ad_link if sq_ad else None
+                q_link if hires_st else None
             ])
 
 

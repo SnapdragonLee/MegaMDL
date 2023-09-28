@@ -1,3 +1,4 @@
+import re
 import time
 from urllib.parse import quote
 
@@ -7,7 +8,7 @@ from const.basic import *
 
 
 def dw_from_main(name, artist, origin_url: str) -> bool:
-    origin_trans_url = ripper_page + 'dl?url=' + quote(origin_url) + '&format=mp3&donotshare=true'
+    origin_trans_url = ripper_page + 'dl?url=' + quote(origin_url) + f'&format={mp3_format}&donotshare=true'
     s = requests.session()
 
     flag_origin = False
@@ -61,7 +62,8 @@ def dw_from_main(name, artist, origin_url: str) -> bool:
             resp = s.get(url=ripper_page + content['url'][2:])
             if resp.status_code == 200:
                 filename = os.path.basename(
-                    name + ' - ' + artist + content['url'][content['url'].rfind('.'):]
+                    re.sub(r'[\\/:*?<>|"]', '',
+                           name + ' - ' + artist + content['url'][content['url'].rfind('.'):])
                 )
                 file_path = os.path.join(save_dir, filename)
                 with open(file_path, 'wb') as mp3_file:
@@ -90,7 +92,7 @@ def dw_from_qobuz(name, artist, qobuz_url: str):
     if not flag_qobuz:
         print('Please check your connection or try this app after a while')
         return False
-    filename = os.path.basename(name + ' - ' + artist + '.flac')
+    filename = re.sub(r'[\\/:*?<>|"]', '', os.path.basename(name + ' - ' + artist + '.flac'))
     file_path = os.path.join(save_dir, filename)
     with open(file_path, 'wb') as hires_file:
         hires_file.write(resp.content)

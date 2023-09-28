@@ -28,11 +28,11 @@
 
 - [x] Server-closed detection
 
+- [x] Fix plenty of bugs about format in console
+
 - [ ] Metadata fix with info from other sources
 
 - [ ] Add support for other audio origin services
-
-- [ ] Fix plenty of bugs about format in console
 
 - [ ] Other
 
@@ -85,3 +85,18 @@ Apache 2.0
 ## Chinese left
 
 这下终于摆脱QQ、网易音乐的各种版本解码问题了，闲暇的时间可以试试下一下歌曲，老便捷了。
+
+
+
+## Logs
+
+| Date      | Actions                                                      |
+| --------- | ------------------------------------------------------------ |
+| 2023.9.29 | v0.96-Beta will be released soon...                          |
+| 2023.9.28 | Fix bugs in download procedure                               |
+| 2023.9.28 | v0.95-Beta is released                                       |
+| 2023.9.28 | Add colors in console to emphasize different quality from different sources |
+| 2023.9.27 | Fix "Different modes may cause plenty of request exceptions" issues |
+| 2023.9.27 | Download procedure multi-threading finished, but got no exception judgments |
+| 2023.9.25 | Initial project                                              |
+
