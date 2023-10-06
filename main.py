@@ -3,7 +3,7 @@ from procedure.download import dw_from_main, dw_from_qobuz
 from procedure.search import check_procedure, check_connection
 
 if __name__ == '__main__':
-    mod = check_connection()
+    mod = int(default_mod) if default_mod != '' else check_connection()
 
     if mod == 1:
         print('Main Mode Enabled')
@@ -12,7 +12,7 @@ if __name__ == '__main__':
     elif mod == 5:
         print('Slow Hi-Res Download Mode Enabled')
     else:
-        raise ConnectionError('Please check your connection or try this app after a server recover')
+        raise ConnectionError('Please check your config, connection or try this app after a server recover')
 
     query_input = input('Please input search words: ')
     query_list = check_procedure(query_input, mod)

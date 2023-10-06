@@ -14,8 +14,8 @@
   | Quality | Parameter            | Format  |
   | ------- | -------------------- | ------- |
   | LQ      | 128kbps              | MP3     |
-  | HQ      | 320kbps,             | MP3/OGG |
-  | SQ      | 16bit 44.1kHz,       | FLAC    |
+  | HQ      | 320kbps              | MP3/OGG |
+  | SQ      | 16bit 44.1kHz        | FLAC    |
   | Hi-res  | 24bit 44.1/96/192kHz | FLAC    |
 
   
@@ -52,25 +52,39 @@
    pip install ./requirements.txt
    ```
 
-2. Start it with python 3.6 or above:
+2. Modify the config file located in `config/conifg.json`. There would be 3 options to set up:
+
+   `save_dir` : Music download directory
+
+   `default_mod` : 
+
+   | Mod  | Name                 | Properties                                           |
+   | ---- | -------------------- | ---------------------------------------------------- |
+   | 1    | Main                 | All qualities can be downloaded                      |
+   | 2    | Backup               | Only LQ and Hi-res can be downloaded                 |
+   | 5    | Slow Hi-Res Download | Only HQ, SQ, or Hi-res(Sometimes signed by mistakes) |
+
+   
+
+3. Start it with python 3.6 or above:
 
    ```bash
    python ./main.py
    ```
 
-3. Server detection first, there would be 3 modes: `Main`，`Backup`,  `Slow Hi-Res Download` .
+4. Server detection or started by `default_mod` first, there would be 3 modes: `Main`，`Backup`,  `Slow Hi-Res Download` .
 
-4. Search songs by typing words:
+5. Search songs by typing words:
 
    ![image-20230928062441630](Readme.assets/image-20230928062441630.png)
 
-5. Type the option number and select download type which you prefer:
+6. Type the option number and select download type which you prefer:
 
    ![1695854548410](Readme.assets/1695854548410.jpg)
 
    *Please wait until the procedure finished. If your network traffic is slow and choose `SQ` or `Hi-res` option, **this may take a few minutes to work out.**
 
-6. Now enjoy your onw music with fully metadata loaded:
+7. Now enjoy your onw music with fully metadata loaded:
 
    ![image-20230928063422795](Readme.assets/image-20230928063422795.png)
 

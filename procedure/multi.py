@@ -50,9 +50,10 @@ def collect_info(data, entry, sequence, mod: int):
         elif 'deezer' in links:
             sq_st = True
             sq_link = links['deezer'][0]['link']
-        elif 'qobuz' in links:
-            sq_st = True
-            sq_link = links['qobuz'][0]['link']
+
+        if 'qobuz' in links:
+            hires_st = True
+            q_link = links['qobuz'][0]['link']
         if 'spotify' in links:
             hq_st = True
     if 'soundcloud' in links:

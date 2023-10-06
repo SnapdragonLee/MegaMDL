@@ -25,7 +25,7 @@ if not os.path.isabs(save_dir):
 
 os.makedirs(save_dir, exist_ok=True)
 
-default_type = config.get('default_type', '')
+default_mod = config.get('default_mod', '')
 mp3_format = config.get('mp3_320k_format', '')
 
 key = [0x1791, 0x1e71, 0x489f, 0x2211, 0x11fa, 0x0ef9, 0x289f]
