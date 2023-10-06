@@ -64,6 +64,8 @@
    | 2    | Backup               | Only LQ and Hi-res can be downloaded                 |
    | 5    | Slow Hi-Res Download | Only HQ, SQ, or Hi-res(Sometimes signed by mistakes) |
 
+   `p3_320k_format` : This could be filled by "mp3" or "ogg".
+
    
 
 3. Start it with python 3.6 or above:
