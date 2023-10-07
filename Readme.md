@@ -108,13 +108,13 @@ Apache 2.0
 
 ## Logs
 
-| Date      | Actions                                                      |
-| --------- | ------------------------------------------------------------ |
-| 2023.9.29 | v0.96-Beta will be released soon...                          |
-| 2023.9.28 | Fix bugs in download procedure                               |
-| 2023.9.28 | v0.95-Beta is released                                       |
+| Date      | Actions                                                                     |
+|-----------|-----------------------------------------------------------------------------|
+| 2023.10.6 | v0.96-Beta is released                                                      |
+| 2023.9.28 | Fix bugs in download procedure                                              |
+| 2023.9.28 | v0.95-Beta is released                                                      |
 | 2023.9.28 | Add colors in console to emphasize different quality from different sources |
-| 2023.9.27 | Fix "Different modes may cause plenty of request exceptions" issues |
+| 2023.9.27 | Fix "Different modes may cause plenty of request exceptions" issues         |
 | 2023.9.27 | Download procedure multi-threading finished, but got no exception judgments |
-| 2023.9.25 | Initial project                                              |
+| 2023.9.25 | Initial project                                                             |
 
