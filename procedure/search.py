@@ -72,7 +72,7 @@ def check_procedure(input_str: str, mod: int):
         for row in selected_column:
             for i, value in enumerate(row):
                 if i > 4: break
-                column_widths[i] = max(column_widths[i], wcswidth(str(value)))
+                column_widths[i] = min(max(column_widths[i], wcswidth(str(value))), 30)
 
         alignments = ["center" for _ in heads]
         print(tabulate(selected_column, heads, colalign=alignments, tablefmt='fancy_grid',
